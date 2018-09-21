@@ -1,91 +1,255 @@
+/* General CSS for index.html, contact.html, portfolio.html */
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/gravel.png");
+}
+
+
+header {
+  width: 100%;
+  margin: auto;
+  background-color: white;
+}
+
+.floating-header{
+  width: 960px;
+  margin: auto; 
   }
 
-  header {
-    width: 100%;
-    margin: auto;
-    background-color: white;
+.logo{
+  display:inline-block;
+  margin: 0;
+  background: #4aaaa5;
+  padding: 45px;
+  font-size: 30px;
+  color: white;
+  text-align: left;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
 
-  }
+#navigation-bar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+  color: #777777;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif
+}
 
-  #navigation-bar{
-    color: #777777;
-    float: right;
-    font-family: sans-serif;
-    font-size: 18px;
-  }
-
-  .floating-header{
-    width: 960px;
-    margin: auto;
-  }
-
-  body {
-    background-image: url("../images/gravel.png");
-  }
+#navigation-bar li{
+  display: inline;
+  text-align: center;
+  padding: 12px;
+  line-height: 160px;
+  font-size: 20px;
+  color: #777777
+}
   
-  h1{
-    background: #4aaaa5;
-    padding: 45px;
-    margin: auto;
-    margin-right: 700px;
-    margin-bottom: 20px;
-    font-size: 30px;
-    color: white;
-    text-align: left;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-  }
+h2{
+  font-size: 30px;
+  color: #4aaaa5;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  margin: 0px;
+}  
 
-  h2{
-    font-size: 30px;
-    color: #4aaaa5;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    margin: 0px;
+hr {
+  height: 3px;
+  margin-bottom: 20px;
+  color: #77777777;
+  background-color: #777777;
+}
 
-  }  
+#footer{
+  background: #666666;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+  height: 60px;
+  border-top: 10px solid #4aaaa5;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%
+}
 
-  hr {
-    weight: bold;
-    margin-bottom: 20px;
-    color: #777777;
-  }
 
-  img {
-    float: left;
-    padding-right: 20px;
-  }
+/* CSS for index.html */
 
-  #navigation {
-    float: right;
-    text-decoration: none;
-  }
+img {
+  float: left;
+  padding-right: 20px;
+}
 
-  #about-me{
-    padding: 20px;
-    margin: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #777777;
-    line-height: 1.8;
-    font-size: 18px;
-  }
+#about-me{
+  padding: 20px;
+  margin: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777777;
+  line-height: 1.8;
+  font-size: 18px;
+}
 
-  #footer{
-    background: #666666;
-    color: #ffffff;
-    text-align: center;
-    font-size: 12px;
-    line-height: 12px;
-    height: 60px;
-    border-top: 10px solid #4aaaa5;
-  }
+.IndexContainer{
+  width: 960px;
+  align-content: center;
+  background-color: #ffffff;
+  margin: auto;
+  margin-bottom: 15%;
+  margin-top: 20px;
 
-  .IndexContainer{
-    width: 960px;
-    align-content: center;
-    background-color: #ffffff;
-    margin: auto;
-    margin-bottom: 100px;
-    margin-top: 40px;
+}
 
-  }
+/* CSS for contact.html */
+
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 20px;   
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin: 12px;
+  margin-right: 20px;
+}
+
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #777777;
+  margin: 20px;
+  margin-right: 20px;
+
+}
+
+input[type=submit] {
+  background-color: #4aaaa5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: white;
+  margin: 20px;
+  margin-right: 20px;
+}
+
+input[type=submit]:hover {
+  background-color: #167e79;  
+}
+
+form{
+  margin-right: 32px;
+}
+
+.contact-container {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  width: 960px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 3%;
+}
+
+#form-header{
+  font-size: 30px;
+  color: #4aaaa5;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  margin: 0px;
+  margin-left: 20px;
+}
+
+#form-line {
+  height: 3px;
+  margin-bottom: 20px;
+  color: #77777777;
+  background-color: #777777;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+
+}
+
+/* css for portfolio.html */
+
+.portfolio-container{
+  background-color: #ffffff;
+  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  width: 960px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 3%;
+}
+
+#portfolio-line{
+  height: 3px;
+  margin-bottom: 20px;
+  color: #77777777;
+  background-color: #777777;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.top-photos,
+.middle-photos,
+.bottom-photos{
+  width: 100%;
+  overflow: auto;
+  clear: both;
+  color: #fff;
+  background: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.harry-kane,
+.heung-min-son,
+.lucas-moura {
+  position: absolute;
+  top: 78%;
+  left: 150px;
+  transform: translate(-50%, -50%);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  background-color: #4aaaa5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 260px;
+}
+
+.dele-alli,
+.christian-eriksen {
+  position: absolute;
+  top: 78%;
+  left: 430px;
+  transform: translate(-50%, -50%);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  background-color: #4aaaa5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 260px;
+}
