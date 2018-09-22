@@ -36,9 +36,6 @@ header {
   margin: 0;
   padding: 0;
   float: right;
-  color: #777777;
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif
 }
 
 #navigation-bar li{
@@ -46,10 +43,30 @@ header {
   text-align: center;
   padding: 12px;
   line-height: 160px;
-  font-size: 20px;
-  color: #777777
+  top: 2px;
 }
   
+.nav-link{
+  border-right: 1px solid #777777;
+  top: 10px;
+  bottom: 10px;
+}
+
+.nav-link a{
+  padding: 10px;
+  text-decoration: none;
+  color: #777777;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact-button a{
+  text-decoration: none;
+  color: #777777;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 h2{
   font-size: 30px;
   color: #4aaaa5;
@@ -78,6 +95,15 @@ hr {
   width:100%
 }
 
+#footer p{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
 
 /* CSS for index.html */
 
@@ -88,21 +114,19 @@ img {
 
 #about-me{
   padding: 20px;
-  margin: 30px;
+  margin: 20px;
   font-family: Arial, Helvetica, sans-serif;
   color: #777777;
   line-height: 1.8;
   font-size: 18px;
 }
 
-.IndexContainer{
+.index-container{
   width: 960px;
   align-content: center;
   background-color: #ffffff;
   margin: auto;
-  margin-bottom: 15%;
-  margin-top: 20px;
-
+  margin-bottom: 3%;
 }
 
 /* CSS for contact.html */
@@ -112,7 +136,6 @@ input[type=text], select, textarea {
   width: 100%; 
   padding: 20px;   
   border: 1px solid #ccc; 
-  border-radius: 4px; 
   box-sizing: border-box; 
   margin-top: 6px; 
   margin-bottom: 16px; 
@@ -154,7 +177,6 @@ form{
 }
 
 .contact-container {
-  border-radius: 5px;
   background-color: #ffffff;
   padding: 30px;
   padding-top: 30px;
